@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Bovinos</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav><a href="index.html">Cadastro</a> | <a href="./Bois/bois.html">Bois</a> | <a href="./Vacas/vacas.html">Vacas</a></nav>
+    <form id="formAnimal">
+        <h1>Cadastro</h1>
+
+        <label>Sexo: 
+            <select id="sexo">
+                <option>Macho</option>
+                <option>Fêmea</option>
+            </select>
+        </label><br>
+        <label>Nome: <input type="text" id="nome"></label><br>
+        <label>Data de nascimento: <input type="date" id="dataNascimento"></label><br>
+        <label>Peso: <input type="number" id="peso"></label><br>
+        <label>Raça: <input type="text" id="raca"></label><br>
+        <label>Origem: <input type="text" id="origem"></label><br>
+        <label>Status:
+            <select id="status">
+                <option>Abatido</option>
+                <option>Ativo</option>
+                <option>Enfermo</option>
+                <option>Morto</option>
+                <option>Vendido</option>
+            </select>
+        </label><br>
+        <label>Observações: <input type="text" id="obs"></label><br>
+        <button type="submit">Cadastro</button>
+    </form>
+</body>
+</html>
