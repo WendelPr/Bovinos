@@ -1,25 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="./atualizar.js" defer></script>
-    
+    <title>Deletar Animal (DELETE)</title>
     <link rel="stylesheet" href="../style.css">
 </head>
-
 <body>
     <nav>
-        <a href="../cadastrar/index.html">Cadastrar</a> | 
-        <a href="../filtrar/filtar.html">Filtar</a> | 
-        <a href="../atualizar/atualizar.html">Atualizar</a> | 
+        <a href="../cadastrar/index.html">Cadastro</a> | 
+        <a href="../filtrar/filtar.html">Filtrar</a> | 
+        <a href="../atualizar/atualizar.html">Atualizar</a> |
         <a href="./delete.html">Deletar</a>
     </nav>
-    <h1>Vacas Cadastradas:</h1>
-    <form id="formVacas">
-    </form>
-</body>
+    
+    <h1>Deletar Animal</h1>
 
+    <form id="formDelete">
+        <div id="deleteFeedback" class="feedback-sucesso"></div>
+        <div>
+            <label for="sexoDelete">Sexo:</label>
+            <select id="sexoDelete" required>
+                <option value="">-- Selecione --</option>
+                <option value="Macho">Macho (Boi)</option>
+                <option value="Fêmea">Fêmea (Vaca)</option>
+            </select>
+        </div>
+        <div>
+            <label for="idDelete">ID do Animal para Deletar:</label>
+            <input type="number" id="idDelete" required>
+        </div>
+        <button type="submit">DELETAR</button>
+    </form>
+    
+    <script src="delete.js" defer></script>
+</body>
 </html>

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BovinosApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3f697a031ee5ebac426a6fd1b23020ace690fc7b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eed828b19da7a21eca86578bc72b32b8d8b8ee03")]
 [assembly: System.Reflection.AssemblyProductAttribute("BovinosApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BovinosApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
