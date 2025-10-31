@@ -26,6 +26,40 @@ var app = builder.Build();
 // Usar a política de CORS
 app.UseCors("AllowAll");
 
+// GETES 
+
+
+app.MapGet("/filtrar/bois/{status}/{raca}", async (BoiDbContext db, String status , String raca) =>{
+    List<Boi> boisBanco = await db.Bois.ToListAsync();  
+    List<Boi> boisFiltrados = new List<Boi>();  
+
+    foreach (Boi b in boisBanco){
+        
+        if(b.Raca.ToLower() == raca.ToLower() && b.Status.ToLower() == status.ToLower()){
+            boisFiltrados.Add(b);
+        }
+
+    }
+    return Results.Ok(boisFiltrados);
+});
+app.MapGet("/filtrar/vacas/{status}/{raca}", async (VacaDbContext db, String status , String raca) =>{
+    List<Vaca> boisBanco = await db.Vacas.ToListAsync();  
+    List<Vaca> boisFiltrados = new List<Vaca>();  
+
+    foreach (Vaca b in boisBanco){
+        
+        if(b.Raca.ToLower() == raca.ToLower() && b.Status.ToLower() == status.ToLower()){
+            boisFiltrados.Add(b);
+        }
+
+    }
+    return Results.Ok(boisFiltrados);
+});
+
+
+
+
+
 app.MapGet("/bois", async (BoiDbContext db) =>
 {
     return await db.Bois.ToListAsync();

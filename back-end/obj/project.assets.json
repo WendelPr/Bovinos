@@ -1298,19 +1298,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Wendel do Prado\\.nuget\\packages\\": {}
+    "C:\\Users\\nycol\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Wendel do Prado\\Desktop\\BovinosApi\\BovinosApi.csproj",
+      "projectUniqueName": "C:\\Users\\nycol\\Desktop\\Bovinos\\back-end\\BovinosApi.csproj",
       "projectName": "BovinosApi",
-      "projectPath": "C:\\Users\\Wendel do Prado\\Desktop\\BovinosApi\\BovinosApi.csproj",
-      "packagesPath": "C:\\Users\\Wendel do Prado\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Wendel do Prado\\Desktop\\BovinosApi\\obj\\",
+      "projectPath": "C:\\Users\\nycol\\Desktop\\Bovinos\\back-end\\BovinosApi.csproj",
+      "packagesPath": "C:\\Users\\nycol\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\nycol\\Desktop\\Bovinos\\back-end\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Wendel do Prado\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\nycol\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -1373,7 +1373,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.414/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.415/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

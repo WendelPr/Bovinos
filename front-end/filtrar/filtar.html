@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="filtar.js" defer></script>
+    
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+     <nav>
+        <a href="../cadastrar/index.html">Cadastro</a> | 
+        <a href="./filtar.html">Filtar</a> | 
+        <a href="../atualizar/atualizar.html">Atualizar</a> | 
+        <a href="../apagar/delete.html">Deletar</a>
+    </nav>
+    <h1>Cadastrados:</h1>
+     <form id="formFiltro">
+         <h1>Filtar</h1>
+
+        <label>Sexo: 
+            <select id="sexo">
+                <option>Macho</option>
+                <option>Fêmea</option>
+            </select>
+        </label><br>
+        
+        <label >Raça: <input type="text" id="raca" required></label><br>
+        
+        <label>Status:
+            <select id="status" required>
+                <option>Abatido</option>
+                <option>Ativo</option>
+                <option>Enfermo</option>
+                <option>Morto</option>
+                <option>Vendido</option>
+            </select>
+        </label>
+        
+        <br>
+       
+        <button type="submit">Procurar</button>
+        <button type="button" id="botaoGetAll">Mostrar Todos</button>
+    </form>
+     <table id="tabelaBovinos" >
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Nascimento</th>
+                <th>Raça</th>
+                <th>Peso</th>
+                <th>Origem</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody id="corpoTabela">
+            </tbody>
+    </table>
+
+    <hr>
+</body>
+</html>
