@@ -1298,19 +1298,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nycol\\.nuget\\packages\\": {}
+    "C:\\Users\\Wendel do Prado\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nycol\\Desktop\\Bovinos\\back-end\\BovinosApi.csproj",
+      "projectUniqueName": "C:\\Users\\Wendel do Prado\\Desktop\\Bovinos\\back-end\\BovinosApi.csproj",
       "projectName": "BovinosApi",
-      "projectPath": "C:\\Users\\nycol\\Desktop\\Bovinos\\back-end\\BovinosApi.csproj",
-      "packagesPath": "C:\\Users\\nycol\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nycol\\Desktop\\Bovinos\\back-end\\obj\\",
+      "projectPath": "C:\\Users\\Wendel do Prado\\Desktop\\Bovinos\\back-end\\BovinosApi.csproj",
+      "packagesPath": "C:\\Users\\Wendel do Prado\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Wendel do Prado\\Desktop\\Bovinos\\back-end\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\nycol\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Wendel do Prado\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -1373,8 +1373,16 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.415/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.414/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\Wendel do Prado\\Desktop\\Bovinos\\back-end\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

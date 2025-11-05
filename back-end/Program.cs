@@ -15,50 +15,56 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
     {
-        policy.AllowAnyOrigin()    // permite qualquer origem
-              .AllowAnyMethod()    // permite GET, POST, PUT, DELETE, etc.
-              .AllowAnyHeader();   // permite qualquer header (ex: Content-Type)
+        policy.AllowAnyOrigin()     // permite qualquer origem
+              .AllowAnyMethod()     // permite GET, POST, PUT, DELETE, etc.
+              .AllowAnyHeader();    // permite qualquer header (ex: Content-Type)
     });
 });
 
 var app = builder.Build();
 
-// Usar a política de CORS
 app.UseCors("AllowAll");
 
-// GETES 
+// GETS 
 
+app.MapGet("/filtrar/bois/{status}/{raca}", async (BoiDbContext db, String status, String raca) =>
+{
 
-app.MapGet("/filtrar/bois/{status}/{raca}", async (BoiDbContext db, String status , String raca) =>{
-    List<Boi> boisBanco = await db.Bois.ToListAsync();  
-    List<Boi> boisFiltrados = new List<Boi>();  
+    var query = db.Bois.AsQueryable();
 
-    foreach (Boi b in boisBanco){
-        
-        if(b.Raca.ToLower() == raca.ToLower() && b.Status.ToLower() == status.ToLower()){
-            boisFiltrados.Add(b);
-        }
-
+    if (status != "todos")
+    {
+        query = query.Where(boi => boi.Status == status);
     }
-    return Results.Ok(boisFiltrados);
-});
-app.MapGet("/filtrar/vacas/{status}/{raca}", async (VacaDbContext db, String status , String raca) =>{
-    List<Vaca> boisBanco = await db.Vacas.ToListAsync();  
-    List<Vaca> boisFiltrados = new List<Vaca>();  
 
-    foreach (Vaca b in boisBanco){
-        
-        if(b.Raca.ToLower() == raca.ToLower() && b.Status.ToLower() == status.ToLower()){
-            boisFiltrados.Add(b);
-        }
-
+    if (raca.ToLower() != "todos" && raca != "")
+    {
+        query = query.Where(boi => boi.Raca.ToLower() == raca.ToLower());
     }
+
+    List<Boi> boisFiltrados = await query.ToListAsync();
+
     return Results.Ok(boisFiltrados);
 });
 
+app.MapGet("/filtrar/vacas/{status}/{raca}", async (VacaDbContext db, String status, String raca) =>
+{
+    var query = db.Vacas.AsQueryable();
 
+    if (status != "todos" && status != "")
+    {
+        query = query.Where(vaca => vaca.Status == status);
+    }
 
+    if (raca.ToLower() != "todos" && raca != "")
+    {
+        query = query.Where(vaca => vaca.Raca.ToLower() == raca.ToLower());
+    }
 
+    List<Vaca> vacasFiltradas = await query.ToListAsync();
+
+    return Results.Ok(vacasFiltradas);
+});
 
 app.MapGet("/bois", async (BoiDbContext db) =>
 {
@@ -90,9 +96,6 @@ app.MapGet("/vacas/{id}", async (int id, VacaDbContext db) =>
     }
     return Results.Ok(vaca);
 });
-
-
-
 
 // POSTS -------------------------------------------------------------------------------------------
 app.MapPost("/bois", async (BoiDbContext db, Boi novoBoi) =>
