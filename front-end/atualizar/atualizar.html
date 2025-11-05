@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atualizar Bovinos</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="atualizar.js" defer></script>
+</head>
+<body>
+    <nav>
+        <a href="../cadastro/index.html">Cadastro</a> | 
+        <a href="../filtrar/filtar.html">Filtrar</a> | 
+        <a href="./atualizar.html">Atualizar</a> | 
+        <a href="../apagar/delete.html">Deletar</a>
+    </nav>
+
+    <form id="formBusca">
+        <h1>Atualizar Animal</h1>
+        <label>Sexo: 
+            <select id="sexo">
+                <option>Macho</option>
+                <option>Fêmea</option>
+            </select>
+        </label><br>
+        <p>Digite o ID do animal que deseja atualizar.</p>
+        <label>ID: <input type="number" id="idBusca" required></label><br>
+        <button type="submit">Buscar</button>
+    </form>
+
+    <hr>
+
+    <form id="formAtualizar" style="display: none;">
+        <h2>Dados do Animal para Atualização</h2>
+
+        <label>ID: <input type="text" id="animalId" disabled></label><br>
+        <label>Nome: <input type="text" id="nome"></label><br>
+        <label>Data de nascimento: <input type="date" id="dataNascimento"></label><br>
+        <label>Peso: <input type="number" id="peso"></label><br>
+        <label>Raça: <input type="text" id="raca"></label><br>
+        <label>Origem: <input type="text" id="origem"></label><br>
+        <label>Status:
+            <select id="status">
+                <option>Abatido</option>
+                <option>Ativo</option>
+                <option>Enfermo</option>
+                <option>Morto</option>
+                <option>Vendido</option>
+            </select>
+        </label><br>
+        <label>Observações: <input type="text" id="obs"></label><br>
+        <button type="submit">Atualizar</button>
+    </form>
+
+</body>
+</html>
