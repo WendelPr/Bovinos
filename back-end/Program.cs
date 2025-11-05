@@ -69,6 +69,30 @@ app.MapGet("/vacas", async (VacaDbContext db) =>
 {
     return await db.Vacas.ToListAsync();
 });
+app.MapGet("/bois/{id}", async (int id, BoiDbContext db) =>
+{
+    var boi = await db.Bois.FindAsync(id);
+
+    if (boi == null)
+    {
+        return Results.NotFound($"Boi com ID {id} não encontrado.");
+    }
+
+    return Results.Ok(boi);
+});
+
+app.MapGet("/vacas/{id}", async (int id, VacaDbContext db) =>
+{
+    var vaca = await db.Vacas.FindAsync(id);
+    if (vaca == null)
+    {
+        return Results.NotFound($"Vaca com ID {id} não encontrada.");
+    }
+    return Results.Ok(vaca);
+});
+
+
+
 
 // POSTS -------------------------------------------------------------------------------------------
 app.MapPost("/bois", async (BoiDbContext db, Boi novoBoi) =>
@@ -86,7 +110,7 @@ app.MapPost("/vacas", async (VacaDbContext db, Vaca novaVaca) =>
 });
 
 // PUTS -------------------------------------------------------------------------------------------
-app.MapPut("/bois/{id}", async (int id, BoiDbContext db, Boi boiAtualizado) =>
+app.MapPut("/bois/put/{id}", async (int id, BoiDbContext db, Boi boiAtualizado) =>
 {
     var boi = await db.Bois.FindAsync(id);
     if (boi is null) return Results.NotFound("Boi não encontrado!");
@@ -103,7 +127,7 @@ app.MapPut("/bois/{id}", async (int id, BoiDbContext db, Boi boiAtualizado) =>
     return Results.Ok(boi);
 });
 
-app.MapPut("/vacas/{id}", async (int id, VacaDbContext db, Vaca vacaAtualizado) =>
+app.MapPut("/vacas/put/{id}", async (int id, VacaDbContext db, Vaca vacaAtualizado) =>
 {
     var vaca = await db.Vacas.FindAsync(id);
     if (vaca is null) return Results.NotFound("Vaca não encontrado!");
