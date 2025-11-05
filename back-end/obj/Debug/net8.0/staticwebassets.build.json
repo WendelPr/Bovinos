@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "dReMkpToRGo+zrAyBnBm72FJThSdfnbgweZFg49wBHY=",
+  "Source": "BovinosApi",
+  "BasePath": "_content/BovinosApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

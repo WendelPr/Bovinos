@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+h1, h2 {
+    color: #e90808;
+}
+/* --- CSS Apenas para a Barra de Navegação --- */
+
+nav {
+    width: 100%; /* Faz a nav ocupar a largura toda */
+    background-color: #ffffff; /* Fundo branco */
+    padding: 15px 0; /* Espaçamento interno (vertical) */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* Sombra suave */
+    text-align: center; /* Centraliza os links */
+    margin-bottom: 30px; /* Espaço abaixo da nav */
+}
+
+nav a {
+    font-family: Arial, sans-serif;
+    font-size: 1.1em; /* Tamanho da fonte */
+    font-weight: bold; /* Texto em negrito */
+    color: #0056b3; /* Cor azul escura para os links */
+    text-decoration: none; /* Remove o sublinhado */
+    
+    margin: 0 15px; /* Espaçamento entre os links */
+    padding: 10px 15px; /* Espaçamento interno (para o clique ficar maior) */
+    border-radius: 5px; /* Cantos arredondados para o "botão" */
+    
+    /* Efeito de transição suave */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Efeito HOVER (quando o mouse passa por cima) */
+nav a:hover {
+    background-color: #f0f0f0; /* Um fundo cinza bem claro */
+    color: #003d7a; /* Escurece o azul do texto */
+}
+
+/* (Opcional) Estilo para o link da página ATUAL */
+/* Você teria que adicionar a classe "active" no HTML da página */
+nav a.active {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+/* Estilo do Formulário */
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+form div {
+    margin-bottom: 10px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="date"] {
+    width: calc(100% - 20px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+form button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+}
+
+form button[type="button"] {
+    background-color: #6c757d;
+    color: white;
+}
+
+/* Estilo da Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Botões de Ação na Tabela */
+.btnEditar, .btnExcluir {
+    padding: 5px 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.btnEditar {
+    background-color: #ffc107;
+}
+
+.btnExcluir {
+    background-color: #dc3545;
+    color: white;
+}
