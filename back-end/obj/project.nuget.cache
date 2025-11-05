@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qoXcBVspuCI=",
+  "dgSpecHash": "3ycQA3k4VDc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Wendel do Prado\\Desktop\\Bovinos-master (1)\\back-end\\BovinosApi.csproj",
+  "projectFilePath": "C:\\Users\\Wendel do Prado\\Desktop\\Bovinos\\back-end\\BovinosApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Wendel do Prado\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Wendel do Prado\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.0\\microsoft.data.sqlite.core.7.0.0.nupkg.sha512",

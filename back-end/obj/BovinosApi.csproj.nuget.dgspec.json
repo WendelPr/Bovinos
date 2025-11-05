@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Wendel do Prado\\Desktop\\Bovinos-master (1)\\back-end\\BovinosApi.csproj": {}
+    "C:\\Users\\Wendel do Prado\\Desktop\\Bovinos\\back-end\\BovinosApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Wendel do Prado\\Desktop\\Bovinos-master (1)\\back-end\\BovinosApi.csproj": {
+    "C:\\Users\\Wendel do Prado\\Desktop\\Bovinos\\back-end\\BovinosApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Wendel do Prado\\Desktop\\Bovinos-master (1)\\back-end\\BovinosApi.csproj",
+        "projectUniqueName": "C:\\Users\\Wendel do Prado\\Desktop\\Bovinos\\back-end\\BovinosApi.csproj",
         "projectName": "BovinosApi",
-        "projectPath": "C:\\Users\\Wendel do Prado\\Desktop\\Bovinos-master (1)\\back-end\\BovinosApi.csproj",
+        "projectPath": "C:\\Users\\Wendel do Prado\\Desktop\\Bovinos\\back-end\\BovinosApi.csproj",
         "packagesPath": "C:\\Users\\Wendel do Prado\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Wendel do Prado\\Desktop\\Bovinos-master (1)\\back-end\\obj\\",
+        "outputPath": "C:\\Users\\Wendel do Prado\\Desktop\\Bovinos\\back-end\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Wendel do Prado\\AppData\\Roaming\\NuGet\\NuGet.Config"
